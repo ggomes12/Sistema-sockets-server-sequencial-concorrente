@@ -81,6 +81,11 @@ Ao rodar o código, você verá algo como o seguinte no terminal:
   Tempos servidor sequencial (10 clientes): 0.0023 segundos
   Servidor concorrente aguardando conexões em 127.0.0.1:15001
   Tempos servidor concorrente (10 clientes): 0.0019 segundos
+
+  Servidor sequencial aguardando conexões em 127.0.0.1:15000
+  Tempos servidor sequencial (500 clientes): 0.0023 segundos
+  Servidor concorrente aguardando conexões em 127.0.0.1:15001
+  Tempos servidor concorrente (500 clientes): 0.0019 segundos
 ```
 
 Além disso, gráficos de linha e box-plot serão gerados para comparar o desempenho dos dois tipos de servidores.
