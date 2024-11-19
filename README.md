@@ -9,7 +9,7 @@ Simula o funcionamento do servidor com 10, 100/500, 1.000 e 10.000 clientes. O t
 - **Servidor Sequencial**: Processa uma conexão de cada vez.
 - **Servidor Concorrente**: Cria uma nova thread para cada cliente.
 - **Cliente**: Envia um ano para o servidor e recebe a resposta se o ano é bissexto ou não.
-- **Simulação de Clientes**: Simula 10, 100, 1.000 e 10.000 clientes.
+- **Simulação de Clientes**: Simula 10, 100/500, 1.000 e 10.000 clientes.
 - **Coleta de Tempo de Resposta**: Mede o tempo de resposta do servidor para diferentes quantidades de clientes.
 - **Gerenciamento de Gráficos**: Gera gráficos de linha e box-plot para comparar o desempenho dos servidores sequencial e concorrente.
 
@@ -39,12 +39,12 @@ O código está estruturado em funções que lidam com cada parte do processo, d
 
 ### 2. Experimentos
 
-O programa executa os experimentos para 10, 100, 1.000 e 10.000 clientes, repetindo 10 vezes e coletando os tempos médios de resposta dos servidores sequencial e concorrente.
+O programa executa os experimentos para 10, 100/500, 1.000 e 10.000 clientes, coletando os tempos médios de resposta dos servidores sequencial e concorrente. E para gerar o grafico bloxplot repetimos 10 vezes o laboratorio.
 
 #### Passos para execução:
 
 1. **Iniciar o servidor**: O servidor pode ser sequencial ou concorrente.
-2. **Simulação de clientes**: O número de clientes varia entre 10, 100, 1.000 e 10.000.
+2. **Simulação de clientes**: O número de clientes varia entre 10, 100/500, 1.000 e 10.000.
 3. **Coleta de tempo de resposta**: O tempo médio de resposta é calculado para cada número de clientes.
 4. **Gerar gráficos**: São gerados gráficos de linha e box-plot para comparar o desempenho dos servidores.
 
@@ -63,7 +63,7 @@ O programa executa os experimentos para 10, 100, 1.000 e 10.000 clientes, repeti
   
   ```bash
   git clone git@github.com:ggomes12/Sistema-sockets-server-sequencial-concorrente.git
-  cd <diretorio-do-repositorio>
+  cd Sistema-sockets-server-sequencial-concorrente
   ```
 2. Execute o código:
 ```bash
